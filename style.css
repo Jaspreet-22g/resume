@@ -1,0 +1,60 @@
+/* --------fonts-------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+/* --------preset------- */
+*,*::before,*::after{
+	margin: 0;
+	padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: auto;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    width: 8.3in;
+    height: 11.7in;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ---------print-------- */
+@media print {
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    @page {
+        size: A4;
+        margin: 0;
+      }
+}
+
+/* --------contact-info-- */
+#contact-info{
+    background-color:#c9e6ff;
+}
+#contact-info > h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 30px;
+}
+#contact-info .details{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #85c6ff;
+}
+#contact-info .details > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-info .details > div >img{
+    height: 20px;
+    margin-right: 5px;
+}
