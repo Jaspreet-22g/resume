@@ -1,6 +1,11 @@
 /* --------fonts-------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300;1,400&display=swap");
 
+/* --------colors------- */
+:root {
+  --grey: rgb(88, 88, 88);
+}
+
 /* --------preset------- */
 *,
 *::before,
@@ -19,16 +24,35 @@ body {
   height: 11.7in;
 }
 h2 {
-  /* line-height: 36px; */
-  /* border-bottom: 4px solid black; */
-  background-color: #85c6ff;
+  margin: 0 30px 20px 30px;
+  padding: 0 !important;
+  line-height: 40px;
+  margin-bottom: 10px;
+  color: var(--grey);
+  border-bottom: 3px solid var(--grey);
 }
-h3 {
-  /* line-height: 32px; */
+h4 {
+  color: var(--grey);
+  font-weight: 400;
 }
 a {
   text-decoration: none;
   color: black;
+}
+ul {
+  margin-left: 5px;
+  list-style-type: none;
+}
+
+li:before {
+  display: inline-block;
+  content: "";
+  border-radius: 50%;
+  z-index: 2;
+  height: 10px;
+  width: 10px;
+  margin-right: 0.5rem;
+  background-color: var(--grey);
 }
 section:not(#contact-info) {
   padding: 10px 0;
@@ -42,9 +66,10 @@ section > * {
   justify-content: space-between;
 }
 .align-center {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
+
 /* ---------print-------- */
 @media print {
   body {
@@ -59,26 +84,33 @@ section > * {
 
 /* --------contact-info-- */
 #contact-info {
-  /* background-color:#c9e6ff; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 28px 20px 5px 20px;
 }
 #contact-info > h1 {
-  text-align: center;
-  font-size: 35px;
+  font-size: 42px;
   font-weight: 700;
-  padding: 10px 30px;
+  padding: 0;
+  white-space: nowrap;
 }
 #contact-info .info-details {
   display: flex;
+  padding: 0;
   justify-content: space-between;
-  padding: 10px 30px;
-  /* background-color: #85c6ff; */
 }
 #contact-info .info-details > div {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  margin-right: 4px;
 }
-#contact-info .info-details > div > img {
+#contact-info .info-details > div > div {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+}
+#contact-info .info-details > div > div > img {
   height: 20px;
   margin-right: 5px;
 }
@@ -91,25 +123,65 @@ section > * {
 h4 {
   display: inline-block;
 }
-.ed-details {
-  margin: 15px 0;
+#prof-exp > .emp-details h3 {
+  color: var(--grey);
 }
 
-/* ----------tech-skills-------- */
+/* ---------education---------- */
+.ed-details {
+  margin: 15px 0;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ed-details > h3 {
+  display: flex;
+  align-items: center;
+}
+.ed-details > h3:before {
+  display: inline-block;
+  content: "";
+  border-radius: 50%;
+  z-index: 2;
+  height: 10px;
+  width: 10px;
+  margin-right: 0.5rem;
+  background-color: var(--grey);
+}
+.ed-details > div > h3 {
+  color: var(--grey);
+  font-size: 16px;
+}
+.ed-details > div {
+  padding-left: 20px;
+}
+.ed-details:before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  transform: translateY(4px);
+  height: 57px;
+  width: 2px;
+  margin-left: 4px;
+  background-color: #adadad;
+}
+
+/* ----------tech-skills, interests-------- */
 #tech-skills img {
   height: 20px;
   margin-right: 5px;
 }
-#tech-skills > .skill-box {
-    display: flex;
-    flex-wrap: wrap;
-    /* padding: 0; */
+.box {
+  display: flex;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
-#tech-skills > .skill-box > h4{
-    display: inline-block;
-    margin: 10px;
-    margin-bottom: 0;
-    border-radius: 5px;
-    border: 2px solid black;
-    padding:4px;
+.box > h4 {
+  color: black;
+  display: inline-block;
+  margin: 0 10px 5px 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 4px;
 }
