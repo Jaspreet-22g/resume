@@ -224,7 +224,6 @@ ul li:before {
 
 /* ---------education---------- */
 .ed-details {
-  margin: 5px 0 10px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
