@@ -39,21 +39,28 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 8.3in;
   height: 11.7in;
+  min-height: 296.5mm;
   border: 5px solid $grey;
   border-top: 0;
   section {
     // ------------headings-font-size------------------
+    h1 {
+      font-size: 25px;
+      font-weight: 700;
+    }
     h2 {
       font-size: 20px;
+      font-weight: 700;
     }
     h3 {
-      font-size: 18px;
+      font-size: 16px;
+      font-weight: 700;
     }
     h4 {
-      font-size: 16px;
+      font-size: 14px;
     }
     h5 {
-      font-size: 14px;
+      font-size: 12px;
     }
 
     b {
@@ -65,11 +72,11 @@ body {
       padding: 0 5px;
     }
 
-    .main-block-title{
-        padding: 0 5px!important;
-        margin: 15px 0 5px 0;
-        color: $grey;
-        border-bottom: 5px solid $grey;
+    .main-block-title {
+      padding: 0 5px !important;
+      margin: 15px 0 5px 0;
+      color: $grey;
+      border-bottom: 5px solid $grey;
     }
     a {
       text-decoration: none;
@@ -101,7 +108,8 @@ body {
       }
     }
 
-    .horizontal-ul { // ------for horizontol bullet lists----
+    .horizontal-ul {
+      // ------for horizontol bullet lists----
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -130,8 +138,6 @@ body {
     padding: 5px;
     margin-bottom: 5px;
     h1 {
-      font-size: 25px;
-      font-weight: 700;
       color: white;
       width: auto;
     }
@@ -168,10 +174,11 @@ body {
 
 // ---------education--------------
 
-.ed-details {
+.vert-block-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 10px;
   h4 {
     color: $grey;
     padding-left: 13px;
@@ -180,6 +187,9 @@ body {
 
 // ---------------certifications-------------
 .certifications {
+  h3 {
+    font-weight: 500;
+  }
   li {
     & > *:first-child {
       flex: 2;
@@ -189,14 +199,14 @@ body {
 
 /* ---------print-------- */
 @media print {
-    body {
-      height: 100%;
-      width: 100%;
-    }
-  
-    @page {
-      size: A4;
-      margin: 0;
-    }
+  body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
   }
-  
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}

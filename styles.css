@@ -42,24 +42,32 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 8.3in;
   height: 11.7in;
+  min-height: 296.5mm;
   border: 5px solid #464646;
   border-top: 0;
 }
 
+body section h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
 body section h2 {
   font-size: 20px;
+  font-weight: 700;
 }
 
 body section h3 {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 body section h4 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body section h5 {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body section b {
@@ -162,8 +170,6 @@ body section .horizontal-ul li:before {
 }
 
 .contact-info .name h1 {
-  font-size: 25px;
-  font-weight: 700;
   color: white;
   width: auto;
 }
@@ -202,7 +208,7 @@ body section .horizontal-ul li:before {
   color: #464646;
 }
 
-.ed-details {
+.vert-block-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,11 +219,16 @@ body section .horizontal-ul li:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 10px;
 }
 
-.ed-details h4 {
+.vert-block-div h4 {
   color: #464646;
   padding-left: 13px;
+}
+
+.certifications h3 {
+  font-weight: 500;
 }
 
 .certifications li > *:first-child {
@@ -231,6 +242,7 @@ body section .horizontal-ul li:before {
   body {
     height: 100%;
     width: 100%;
+    overflow: hidden;
   }
   @page {
     size: A4;
