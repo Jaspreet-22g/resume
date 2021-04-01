@@ -62,7 +62,8 @@ body section h3 {
   font-weight: 700;
 }
 
-body section h4 {
+body section h4,
+body section p {
   font-size: 14px;
 }
 
