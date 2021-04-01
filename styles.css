@@ -42,6 +42,8 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 8.3in;
   height: 11.7in;
+  border: 5px solid #464646;
+  border-top: 0;
 }
 
 body section h2 {
@@ -66,12 +68,12 @@ body section b {
 }
 
 body section > * {
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 body section .main-block-title {
-  padding: 0 !important;
-  margin: 15px 20px 5px 20px;
+  padding: 0 5px !important;
+  margin: 15px 0 5px 0;
   color: #464646;
   border-bottom: 5px solid #464646;
 }
@@ -215,6 +217,7 @@ body section .horizontal-ul li:before {
 
 .ed-details h4 {
   color: #464646;
+  padding-left: 13px;
 }
 
 .certifications li > *:first-child {

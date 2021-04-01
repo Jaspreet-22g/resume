@@ -39,7 +39,8 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 8.3in;
   height: 11.7in;
-
+  border: 5px solid $grey;
+  border-top: 0;
   section {
     // ------------headings-font-size------------------
     h2 {
@@ -61,12 +62,12 @@ body {
     }
 
     & > * {
-      padding: 0 20px;
+      padding: 0 5px;
     }
 
     .main-block-title{
-        padding: 0 !important;
-        margin: 15px 20px 5px 20px;
+        padding: 0 5px!important;
+        margin: 15px 0 5px 0;
         color: $grey;
         border-bottom: 5px solid $grey;
     }
@@ -173,6 +174,7 @@ body {
   justify-content: center;
   h4 {
     color: $grey;
+    padding-left: 13px;
   }
 }
 
