@@ -20,106 +20,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  margin: auto;
-  overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
-  width: 8.3in;
-  height: 11.7in;
-}
-
-section h2 {
-  padding: 0 !important;
-  margin: 15px 20px 5px 20px;
-  color: #464646;
-  border-bottom: 5px solid #464646;
-}
-
-section > * {
-  padding: 0 20px;
-}
-
-section a {
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 20px;
-}
-
-h3 {
-  font-size: 18px;
-}
-
-h4 {
-  font-size: 16px;
-}
-
-h5 {
-  font-size: 14px;
-}
-
-b {
-  color: black;
-  margin-right: 5px;
-}
-
-ul {
-  margin-left: 5px;
-  list-style-type: none;
-}
-
-ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-ul li h5 {
-  font-weight: 500;
-}
-
-ul li:before {
-  display: inline-block;
-  content: "";
-  border-radius: 50%;
-  z-index: 2;
-  height: 8px;
-  width: 8px;
-  margin-right: 5px;
-  background-color: #464646;
-}
-
-.horizontal-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.horizontal-ul li {
-  margin-left: 15px;
-}
-
-.horizontal-ul li:before {
-  background-color: black;
-}
-
 .space-between {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,28 +36,106 @@ ul li:before {
   font-weight: 400;
 }
 
-.align-center {
+body {
+  margin: auto;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  width: 8.3in;
+  height: 11.7in;
+}
+
+body section h2 {
+  font-size: 20px;
+}
+
+body section h3 {
+  font-size: 18px;
+}
+
+body section h4 {
+  font-size: 16px;
+}
+
+body section h5 {
+  font-size: 14px;
+}
+
+body section b {
+  color: black;
+  margin-right: 5px;
+}
+
+body section > * {
+  padding: 0 20px;
+}
+
+body section .main-block-title {
+  padding: 0 !important;
+  margin: 15px 20px 5px 20px;
+  color: #464646;
+  border-bottom: 5px solid #464646;
+}
+
+body section a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+body section ul {
+  margin-left: 5px;
+  list-style-type: none;
+}
+
+body section ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-/* ---------print-------- */
-@media print {
-  body {
-    height: 100%;
-    width: 100%;
-  }
-  @page {
-    size: A4;
-    margin: 0;
-  }
+body section ul li h5 {
+  font-weight: 500;
 }
 
-/* --------contact-info-- */
+body section ul li:before {
+  display: inline-block;
+  content: "";
+  border-radius: 50%;
+  z-index: 2;
+  height: 8px;
+  width: 8px;
+  margin-right: 5px;
+  background-color: #464646;
+}
+
+body section .horizontal-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .horizontal-ul li {
+  margin-left: 15px;
+}
+
+body section .horizontal-ul li:before {
+  background-color: black;
+}
+
 .contact-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,12 +196,10 @@ ul li:before {
   margin-right: 5px;
 }
 
-/* -----------professional-exp--- */
 .prof-exp .emp-details h4 {
   color: #464646;
 }
 
-/* ---------education---------- */
 .ed-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,10 +217,21 @@ ul li:before {
   color: #464646;
 }
 
-/* ----------tech-skills-------- */
 .certifications li > *:first-child {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+
+/* ---------print-------- */
+@media print {
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  @page {
+    size: A4;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
