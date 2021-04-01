@@ -42,7 +42,8 @@ section > * {
 section a {
   text-decoration: none;
   color: black;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 h2 {
@@ -209,11 +210,11 @@ ul li:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2px;
+  margin: 2.5px 5px;
 }
 
 .contact-info .info-details > div > img {
-  height: 20px;
+  height: 18px;
   margin-right: 5px;
 }
 
