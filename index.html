@@ -5,46 +5,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jaspreet's Resume</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <section id="contact-info">
-        <h1>Jaspreet Singh</h1>
+    <section class="contact-info">
+        <div class="name">
+            <h1>Jaspreet Singh</h1>
+        </div>
         <div class="info-details">
             <div>
-                <div>
-                    <img src="./assets/mail.svg" alt="" />
-                    <a href="mailto:jaspreet98singh@gmail.com">jaspreet98singh@gmail.com</a>
-                </div>
-                <div>
-                    <img src="./assets/linkedin.svg" alt="" />
-                    <a href="https://www.linkedin.com/in/jaspreet22g/">linkedin.com/in/jaspreet22g</a>
-                </div>
+                <img src="./assets/mail.svg" alt="" />
+                <a href="mailto:jaspreet98singh@gmail.com">jaspreet98singh@gmail.com</a>
             </div>
             <div>
-                <div>
-                    <img src="./assets/github.svg" alt="" />
-                    <a href="https://github.com/jaspreet22g">github.com/Jaspreet22g</a>
-                </div>
-                <div>
-                    <img src="./assets/global.svg" alt="" />
-                    <a href="https://portfoliobeta.netlify.app/">portfoliobeta.netlify.app</a>
-                </div>
+                <img src="./assets/linkedin.svg" alt="" />
+                <a href="https://www.linkedin.com/in/jaspreet22g/">linkedin.com/in/jaspreet22g</a>
+            </div>
+            <div>
+                <img src="./assets/github.svg" alt="" />
+                <a href="https://github.com/jaspreet22g">github.com/jaspreet22g</a>
+            </div>
+            <div>
+                <img src="./assets/global.svg" alt="" />
+                <a href="https://portfoliobeta.netlify.app/">portfoliobeta.netlify.app</a>
+            </div>
+            <div>
+                <img src="./assets/phone-call.svg" alt="" />
+                <a href="tel:+918499846810">+91 8499846810</a>
             </div>
         </div>
     </section>
 
-    <section id="prof-exp">
+    <section class="prof-exp">
         <h2>Professional Experience</h2>
         <div class="cmp-details space-between">
             <h3>Tata Consultancy Services</h3>
-            <h4>Chennai, India</h4>
+            <h5>Chennai, India</h5>
         </div>
         <div class="emp-details">
             <div class="space-between">
-                <h3>Developer</h3>
-                <h4>2019 - Present</h4>
+                <h4>Developer</h4>
+                <h5>2019 - Present</h5>
             </div>
             <ul>
                 <li>Developed UI code for Staples Rewards and Loyalty Program.</li>
@@ -57,50 +59,46 @@
     </section>
 
 
-    <section id="education">
+    <section class="education">
         <h2>Education</h2>
-        <div class="ed-details">
-            <h3>International Institute of Information Technology Bangalore</h3>
+        <ul class="ed-details">
+            <li>
+                <h3>IIIT Bangalore</h3>
+            </li>
             <div class="space-between">
-                <h3>PG Diploma in Full Stack Software Engineering, Computer Science</h3>
-                <h4>2021 - 2022</h4>
+                <h4>PG Diploma in Full Stack Software Engineering, Computer Science</h4>
+                <h5>2021 - 2022</h5>
             </div>
-        </div>
-        <div class="ed-details">
-            <h3>Osmania University</h3>
+        </ul>
+        <ul class="ed-details">
+            <li>
+                <h3>Osmania University</h3>
+            </li>
             <div class="space-between">
-                <h3>BSc. Computer Science</h3>
-                <h4>2016 - 2019</h4>
+                <h4>BSc. Computer Science</h4>
+                <h5>2016 - 2019</h5>
             </div>
-        </div>
-        <div class="ed-details">
-            <h3>Kendriya Vidyalaya Begumpet, Hyderabad</h3>
-            <div class="space-between">
-                <h3>Intermediate</h3>
-                <h4>2014 - 2016</h4>
-            </div>
-        </div>
+        </ul>
     </section>
 
-    <section id="tech-skills">
+    <section class="tech-skills">
         <h2>Technical Skills</h2>
-        <div class="box">
-            <h4>HTML</h4>
-            <h4>CSS</h4>
-            <h4>Javascript</h4>
-            <h4>ReactJS</h4>
-            <h4>ReduxJS</h4>
-            <h4>Java</h4>
-            <h4>GIT</h4>
-        </div>
+        <ul>
+            <li>
+                <h4><b>Programming Languages:</b> </h4> Java, JavaScript
+            </li>
+            <li>
+                <h4><b>Technologies:</b></h4> HTML, CSS, ReactJS, ReduxJS, NextJS, GIT
+            </li>
+        </ul>
     </section>
 
-    <section id="personal-proj">
+    <section class="personal-proj">
         <h2>Personal Projects</h2>
         <div>
             <div class="space-between">
-                <h3>Resume Template</h3>
-                <h4>jaspreetresume.netlify.app</h4>
+                <h4>Resume Template</h4>
+                <h5>jaspreetresume.netlify.app</h5>
             </div>
             <ul>
                 <li>Created Resume Template in HTML and CSS.</li>
@@ -109,8 +107,8 @@
         </div>
         <div>
             <div class="space-between">
-                <h3>Developer Porfolio</h3>
-                <h4>portfoliobeta.netlify.app</h4>
+                <h4>Developer Porfolio</h4>
+                <h5>portfoliobeta.netlify.app</h5>
             </div>
             <ul>
                 <li>Designed and Developed attractive developer portfolio website.</li>
@@ -118,27 +116,27 @@
         </div>
     </section>
 
-    <section id="interests">
-        <h2>Interests</h2>
-        <div class="box">
-            <h4>Poetry</h4>
-            <h4>Fitness</h4>
-            <h4>Music</h4>
-            <h4>Movies</h4>
-            <h4>User Interfaces</h4>
-        </div>
-    </section>
-
-    <section id="certifications">
+    <section class="certifications">
         <h2>Certifications</h2>
-        <div>
-            <div class="space-between">
-                <h3>The Fundamentals of Digital Marketing - Google</h3>
-                <h4>Dec 2018</h4>
-            </div>
-
-        </div>
+        <ul>
+            <li class="space-between">
+                <h5>The Fundamentals of Digital Marketing - <b>Google</b></h5>
+                <h5>Dec 2018</h5>
+            </li>
+        </ul>
     </section>
+
+    <section class="interests">
+        <h2>Interests</h2>
+        <ul class="horizontal-ul">
+            <li>Poetry</li>
+            <li>Fitness</li>
+            <li>User Interfaces</li>
+            <li>Web Design</li>
+            <li>Movies</li>
+        </ul>
+    </section>
+
 </body>
 
 </html>

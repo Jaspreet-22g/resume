@@ -1,0 +1,213 @@
+/* --------fonts-------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+/* --------colors------- */
+
+$grey: rgb(70, 70, 70);
+
+/* --------preset------- */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  &::before,
+  &::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: auto;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  width: 8.3in;
+  height: 11.7in;
+}
+
+section {
+  h2 {
+    padding: 0 !important;
+    margin: 15px 20px 5px 20px;
+    color: $grey;
+    border-bottom: 5px solid $grey;
+  }
+  & > * {
+    padding: 0 20px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+}
+// ------------headings-font-size------------------
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+b {
+  color: black;
+  margin-right: 5px;
+}
+
+ul {
+  margin-left: 5px;
+  list-style-type: none;
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    h5{
+        font-weight: 500;
+    }
+    &:before {
+      display: inline-block;
+      content: "";
+      border-radius: 50%;
+      z-index: 2;
+      height: 8px;
+      width: 8px;
+      margin-right: 5px;
+      background-color: $grey;
+    }
+  }
+}
+
+.horizontal-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  li {
+    margin-left: 15px;
+    &:before {
+      background-color: black;
+    }
+  }
+}
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & > *:last-child {
+      font-weight: 400;
+  }
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------print-------- */
+@media print {
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
+
+/* --------contact-info-- */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .name {
+    width: 100%;
+    text-align: center;
+    background: $grey;
+    padding: 5px;
+    margin-bottom: 5px;
+    h1 {
+      font-size: 25px;
+      font-weight: 700;
+      color: white;
+      width: auto;
+    }
+  }
+
+  .info-details {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+      display: flex;
+      align-items: center;
+      margin: 2px;
+
+      & > img {
+        height: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+/* -----------professional-exp--- */
+
+.prof-exp {
+  .emp-details {
+    h4 {
+      color: $grey;
+    }
+  }
+}
+
+/* ---------education---------- */
+
+.ed-details {
+  margin: 5px 0 10px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h4 {
+    color: $grey;
+  }
+}
+
+/* ----------tech-skills-------- */
+
+.tech-skills {
+}
+
+// ----------interests------------
+
+// ---------------certifications----------------
+.certifications {
+  li {
+    & > *:first-child {
+      flex: 2;
+    }
+  }
+}
