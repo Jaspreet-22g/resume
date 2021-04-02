@@ -4,3 +4,4 @@
 2. Open index.html in browser.
 3. Click on save as pdf button.
 4. Select destination as pdf and save
+(save as pdf button not working on android firefox as window.print() is not supported on android firefox)
