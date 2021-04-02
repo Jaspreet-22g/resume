@@ -35,6 +35,7 @@ $grey: rgb(70, 70, 70);
 
 body {
   margin: auto;
+  margin-top: 40px;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   width: 8.3in;
@@ -123,6 +124,27 @@ body {
     }
   }
 }
+//----------------pdf button-----------
+
+button {
+  all: unset;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  width: 100vw;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 0;
+  cursor: pointer;
+  background-color: rgb(3, 67, 110);
+  color: white;
+  &:hover{
+    transition: all .5s;
+    background-color: rgb(0, 43, 71);
+  }
+}
 
 // --------contact-info------
 
@@ -203,6 +225,10 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    margin-top: 0;
+  }
+  button {
+    display: none;
   }
 
   @page {
