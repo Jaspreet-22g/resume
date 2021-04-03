@@ -41,8 +41,10 @@ body {
   width: 8.3in;
   height: 11.7in;
   min-height: 296.5mm;
-  border: 5px solid #464646;
-  border-top: 0;
+}
+
+body section:not(.contact-info) {
+  padding: 0 10px;
 }
 
 body section h1 {
@@ -186,7 +188,7 @@ button:hover {
   width: 100%;
   text-align: center;
   background: #464646;
-  padding: 5px;
+  padding: 5px 0;
   margin-bottom: 5px;
 }
 

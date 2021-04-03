@@ -36,9 +36,10 @@ body {
   width: 8.3in;
   height: 11.7in;
   min-height: 296.5mm;
-  border: 5px solid $grey;
-  border-top: 0;
   section {
+    &:not(.contact-info){
+      padding: 0 10px;
+    }
     // ------------headings-font-size------------------
     h1 {
       font-size: 25px;
@@ -152,7 +153,7 @@ button {
     width: 100%;
     text-align: center;
     background: $grey;
-    padding: 5px;
+    padding: 5px 0;
     margin-bottom: 5px;
     h1 {
       color: white;
