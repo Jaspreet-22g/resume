@@ -1,12 +1,7 @@
-/* --------fonts-------- */
-
+// --------preset-------
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
-
-/* --------colors------- */
-
 $grey: rgb(70, 70, 70);
 
-/* --------preset------- */
 * {
   margin: 0;
   padding: 0;
@@ -140,8 +135,8 @@ button {
   cursor: pointer;
   background-color: rgb(3, 67, 110);
   color: white;
-  &:hover{
-    transition: all .5s;
+  &:hover {
+    transition: all 0.5s;
     background-color: rgb(0, 43, 71);
   }
 }

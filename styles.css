@@ -1,7 +1,4 @@
-/* --------fonts-------- */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
-/* --------colors------- */
-/* --------preset------- */
 * {
   margin: 0;
   padding: 0;
@@ -165,8 +162,8 @@ button {
 }
 
 button:hover {
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   background-color: #002b47;
 }
 
