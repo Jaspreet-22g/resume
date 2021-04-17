@@ -18,7 +18,6 @@ $grey: rgb(70, 70, 70);
     scroll-behavior: smooth;
   }
 }
-
 .space-between {
   display: flex;
   align-items: center;
@@ -27,9 +26,6 @@ $grey: rgb(70, 70, 70);
     font-weight: 400;
     font-size: 12px;
   }
-}
-html{
-  padding: 0 60px;
 }
 body {
   margin: auto;
@@ -133,9 +129,8 @@ button {
   justify-content: center;
   color: #2d92ba;
   z-index: 99;
-  top: 5px;
-  left: 5px;
-  right: 0;
+  bottom: 5px;
+  right: 5px;
   cursor: pointer;
   img{
     width: 50px;
@@ -224,9 +219,6 @@ button {
 
 /* ---------print-------- */
 @media print {
-  html{
-    padding: 0 0;
-  }
   body {
     height: 100%;
     width: 100%;
