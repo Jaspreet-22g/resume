@@ -31,7 +31,6 @@ $grey: rgb(70, 70, 70);
 
 body {
   margin: auto;
-  margin-top: 40px;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   width: 8.3in;
@@ -126,21 +125,25 @@ body {
 button {
   all: unset;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #2d92ba;
   z-index: 99;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 5px;
   right: 0;
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  font-weight: 700;
-  padding: 10px 0;
   cursor: pointer;
-  background-color: rgb(3, 67, 110);
-  color: white;
-  &:hover {
-    transition: all 0.5s;
-    background-color: rgb(0, 43, 71);
+  img{
+    width: 50px;
+  }
+}
+// --------summary----------
+
+.summary{
+  p{
+    font-weight: 500;
   }
 }
 
@@ -223,7 +226,6 @@ button {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    margin-top: 0;
   }
   button {
     display: none;

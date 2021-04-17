@@ -36,7 +36,6 @@
 
 body {
   margin: auto;
-  margin-top: 40px;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   width: 8.3in;
@@ -149,24 +148,33 @@ body section .horizontal-ul li:before {
 button {
   all: unset;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #2d92ba;
   z-index: 99;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 5px;
   right: 0;
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  font-weight: 700;
-  padding: 10px 0;
   cursor: pointer;
-  background-color: #03436e;
-  color: white;
 }
 
-button:hover {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  background-color: #002b47;
+button img {
+  width: 50px;
+}
+
+.summary p {
+  font-weight: 500;
 }
 
 .contact-info {
@@ -266,7 +274,6 @@ button:hover {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    margin-top: 0;
   }
   button {
     display: none;
