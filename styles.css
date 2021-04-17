@@ -34,6 +34,10 @@
   font-size: 12px;
 }
 
+html {
+  padding: 0 60px;
+}
+
 body {
   margin: auto;
   overflow-x: hidden;
@@ -270,6 +274,9 @@ button img {
 
 /* ---------print-------- */
 @media print {
+  html {
+    padding: 0 0;
+  }
   body {
     height: 100%;
     width: 100%;
